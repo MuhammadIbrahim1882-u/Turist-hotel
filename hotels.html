@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All Hotels</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css"></head><body data-page="hotels">
+<nav><div class="wrap"><a class="logo" href="/">🏨 StayCentral</a><div><a class="l" href="/">Home</a><a class="l" href="/hotels.html">All Hotels</a><a class="l" href="/about.html">About</a><a class="l" href="/admin.html">Admin</a></div></div></nav>
+<section><div class="wrap"><h2>All Hotels <small id="count"></small></h2><div class="layout">
+<form class="filters" id="f"><label>Search</label><input name="search" placeholder="Name or location"><label>City</label><select name="city"></select>
+<label>Type</label><select name="type"></select><label>Price per night</label><div class="two"><input name="minPrice" type="number" min="0" placeholder="Min"><input name="maxPrice" type="number" min="0" placeholder="Max"></div>
+<label>Minimum rating</label><select name="rating"><option value="">Any</option><option>3</option><option>4</option><option>4.5</option></select>
+<label>Sort by</label><select name="sort"><option value="">Featured</option><option value="price_asc">Price: low to high</option><option value="price_desc">Price: high to low</option><option value="rating">Top rated</option><option value="name">Name</option></select>
+<label>Amenities</label><div class="chk" id="am"></div><br><button class="btn" style="width:100%">Apply</button><br><br><button type="reset" class="btn o" style="width:100%">Reset</button></form>
+<div><div class="grid" id="list"></div><div class="center"><button class="btn" id="more" hidden>Load more</button></div></div></div></div></section>
+<footer><div class="wrap">© 2026 StayCentral · One place to discover every hotel</div></footer>
+<script src="/js/app.js"></script></body></html>
